@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Madlibs</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <!-- My CSS -->
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- My JS-->
+        <script src="madlibs.js"></script>
+    </head>
+    <body>
+      <!-- Navbar code from https://getbootstrap.com/docs/5.3/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid colorednavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="campworden.html">Camp Worden</a>
+                <a class="nav-link" href="h2h.html">H2H</a>
+                <a class="nav-link active" href="madlibs.html">Badlibs</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row text-center">
+            <h3>Mad Libs</h3>
+          </div>
+          <div class="row">
+            <p>
+              Per <a href="https://en.wikipedia.org/wiki/Mad_Libs">Wikipedia</a>:
+              Mad Libs is a phrasal template word game created by Leonard Stern and Roger Price.
+              It consists of one player prompting others for a list of words to substitute for
+              blanks in a story before reading aloud. The game is frequently played as a party
+              game or as a pastime.
+            </p>
+            <p>
+              Basically, I'm going to ask you to fill in a couple blanks. After that,
+              you'll be given the story you helped write!
+            </p><br>
+          </div>
+          <div class="row">
+            <form>
+              <!-- The text boxes and submit button -->
+              <input id="ingverb" placeholder="verb ending in -ing" autocomplete="off" required>
+              <input id="noun1" placeholder="noun (plural or singular)" autocomplete="off" required>
+              <input id="celebrity" placeholder="celebrity" autocomplete="off" required>
+              <input id="verb1" placeholder="verb" autocomplete="off" required>
+              <input id="adjective" placeholder="adjective" autocomplete="off" required>
+              <input id="noun2" placeholder="noun (plural or singular)" autocomplete="off" required>
+              <input id="verb2" placeholder="verb" autocomplete="off" required>
+              <input id="trinket" placeholder="small thing" autocomplete="off" required>
+              <input id="animal" placeholder="an animal" autocomplete="off" required>
+              <br>
+              <input type="submit">
+            </form>
+          </div>
+          <div class="row">
+            <p id="story"></p>
+          </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

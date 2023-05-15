@@ -1,0 +1,55 @@
+.main-carousel {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+}
+
+/* I was having trouble sizing the carousel images, so I used:
+https://stackoverflow.com/questions/45379727/make-images-the-same-size-in-bootstrap-grid
+to get the "object-fit: cover;" part*/
+.carousel-image{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#greeting {
+    margin: 15px auto;
+    margin-bottom: 15px;
+}
+
+/* Some sizing issues with the images in the cards were bugging me, so I made this class to fix them */
+.cardimage {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Styling the navbar */
+.colorednavbar {
+    background-color: lightblue;
+}
+
+p {
+    padding: 10px 30px;
+}
+
+#story {
+    font-size: 35px;
+}
+
+.group {
+    max-width: 50%;
+    margin: 5px auto;
+}
+
+input {
+    display: block;
+    margin: 5px auto;
+    width: 50%;
+}
+
+.worden {
+    width: 50%;
+    object-fit: cover;
+
+}
